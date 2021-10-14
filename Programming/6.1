@@ -1,9 +1,26 @@
 file1 = open("untitled.txt", encoding='utf-8')
-forbidedWords = ["путин","навальный","россия","ссср","раньше","единая","партия","либерал","коммунист","сталин","ленин","революция","царь"]
-file1Words = []
-for i in file1:
-    file1Words.append(i.split(":")[1].replace("\n",""))
-    
-file1Words = "".join(file1Words)
+file2 = open("untitled1.txt",encoding='utf-8')
 
-print(file1Words)
+forbidedWords = ["путин","навальный","россия","ссср","раньше","единая","партия","либерал","коммунист","сталин","ленин","революция","царь"]
+def make(file1):
+    file1Words = []
+    for i in file1:
+        file1Words.append(i.split(":")[1].replace("\n",""))
+
+    file1Words = "".join(file1Words)
+    fl1 = ""
+    foundFile1 = []
+    for i in file1Words:
+        if i.isalpha():
+            fl1+= i.lower()
+        else:
+            fl1 += " "
+
+    for i in fl1.split(" "):
+        if i in forbidedWords and i not in foundFile1:
+            foundFile1.append(i)
+    
+    print(foundFile1)
+
+make(file1)
+make(file2)
