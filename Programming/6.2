@@ -1,0 +1,29 @@
+def is_number(x):
+    try:
+        float(x)
+       
+    except ValueError:
+        return False
+    return True
+file = open("untitled1.txt")
+matrix = []
+height = 0
+for row in file:
+    subarr = row.split(" ")
+    height +=1
+    subarr[-1] = subarr[-1][0]
+    matrix.append(subarr)
+
+for w in range(4):
+    summ = 0
+    quanter = 0
+    for h in range(height):
+        if (is_number(matrix[h][w]) or is_number(matrix[h][w])):
+            summ += float(matrix[h][w])
+            quanter +=1
+        else:
+           
+            break
+    if quanter == height: print(summ/height)
+    else: pass
+ 
