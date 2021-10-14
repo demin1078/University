@@ -1,0 +1,9 @@
+file1 = open("untitled.txt", encoding='utf-8')
+forbidedWords = ["путин","навальный","россия","ссср","раньше","единая","партия","либерал","коммунист","сталин","ленин","революция","царь"]
+file1Words = []
+for i in file1:
+    file1Words.append(i.split(":")[1].replace("\n",""))
+    
+file1Words = "".join(file1Words)
+
+print(file1Words)
