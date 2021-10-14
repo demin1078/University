@@ -1,8 +1,4 @@
-import random
-arr = []
-for i in range(random.randint(4,10)):
-    arr.append(random.randint(1,20))
+arr = [1 ,32, 12, 21 ,11, 19 ,1 ,12, 212 ,21, 90,19]
 
-print("Сгенерированный массив:" + ",".join(map(str, arr)))
-arrSet = set(arr)
-print("Массив без повторяющихся элементов: " + ",".join(map(str,arrSet)))
+arrOnce = [i for i in arr if arr.count(i) == 1]
+print(arrOnce)
