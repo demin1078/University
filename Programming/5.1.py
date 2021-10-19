@@ -3,6 +3,7 @@ def multiplication(x,y):
     @type x: int|float
     @type y: int|float
     @return: Returns a multiplicated result
+    @function will a return worth result when x and y are numbers
     """
     return x*y
 
