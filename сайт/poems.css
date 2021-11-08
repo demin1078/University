@@ -1,15 +1,27 @@
 body{
     margin: 0;
-	background-color:#E7D472;
-
+	background: linear-gradient(to bottom right, #ebc923, #faeeb4);
+	height: 755px;
+}
+#wrap{
+	background-color: #fff4bd;
+    height: inherit;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 #main{
 	margin-left:5%;
 	margin-right:5%;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-around;
 }
 #title {
-	text-align:center;
-	height:150px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 50px;
+	
 }
 a:link{
     color:#000;
@@ -37,26 +49,20 @@ a:visited {
 }
 #liHead{   
     margin:0 0 0 0;
-    margin-left: 400px;
+    margin-left: ;
     font-weight:bold;
     box-sizing: border-box;
 }
 #liHead li{
     font-size: 26px;
-    margin:50px 100px 10px 10px;
+    margin:50px 60px 20px 40px;
     display: inline-block;
 }
 #warSong{
-	float:left;
-	width:25%;
-	margin-right:200px;
-	margin-left:100px;
+	
 }
 #restSong{
-	margin-right:100px;
-	float:left;
-	width:25%;
-	
+
 }
 #philSong{
 	float:left;
