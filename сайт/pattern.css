@@ -4,9 +4,9 @@ body{
 }
 #page{
     margin:0;
-    margin-left:25%;
-    margin-right:25%;
-    background-color: white;
+    margin-left:15%;
+    margin-right:15%;
+    background-color: rgb(252, 226, 178);
 }
 
 #header{
@@ -18,7 +18,7 @@ body{
 }
 #liHead{   
     margin:0 0 0 0;
-    margin-left: 80px;
+    margin-left: 150px;
     font-weight:bold;
     box-sizing: border-box;
 }
