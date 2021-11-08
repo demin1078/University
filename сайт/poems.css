@@ -1,18 +1,24 @@
 body{
     margin: 0;
 	background: linear-gradient(to bottom right, #ebc923, #faeeb4);
-	height: 755px;
+	
+}
+footer{
+	height:20px;
+	width:100%;
+	background-color:#A95B1B;
 }
 #wrap{
 	background-color: #fff4bd;
     height: inherit;
     margin-left: 15%;
     margin-right: 15%;
+	
 }
 #main{
 	margin-left:5%;
 	margin-right:5%;
-	
+	height: 585px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content:space-around;
